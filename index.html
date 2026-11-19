@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>ยืนยันตัวตน · Lucifer</title>
+<title>ยืนยันตัวตน · Bloodline</title>
 <style>
   :root { color-scheme: dark; --bg:#0b0b0f; --card:#15151d; --line:#2a2a35; --text:#e7e7ee;
           --muted:#9a9aab; --accent:#8b5cf6; --accent-2:#ff91c8; --blurple:#5865f2; }
@@ -45,17 +45,17 @@
 <main class="card">
   <div class="badge">🔗</div>
   <h1>ยืนยันตัวตน</h1>
-  <p class="sub">ยืนยันตัวตนด้วยบัญชี Discord ของคุณ แล้วเข้าร่วมชุมชนได้ในคลิกเดียว</p>
+  <p class="sub">ยืนยันตัวตนด้วยบัญชี Discord ของคุณ เพื่อรับยศและเข้าใช้เซิร์ฟเวอร์</p>
 
   <div class="dest">
-    <div><div class="label">เซิร์ฟเวอร์ปลายทาง</div><div class="name" id="serverName">—</div></div>
+    <div><div class="label">เซิร์ฟเวอร์</div><div class="name" id="serverName">—</div></div>
     <div class="gid" id="guildId"></div>
   </div>
 
   <ul class="perms">
-    <li><span class="ic">👤</span><span><b>identify</b> — ให้บอทเห็นบัญชีของคุณ เพื่อยืนยันว่าคุณคือคนที่กดยืนยัน</span></li>
-    <li><span class="ic">🚪</span><span><b>guilds.join</b> — อนุญาตให้บอทเพิ่มคุณเข้า <b>เฉพาะเซิร์ฟเวอร์ปลายทางนี้เท่านั้น</b> ครั้งเดียว</span></li>
-    <li><span class="ic">🗑️</span><span>บอท <b>ทิ้งสิทธิ์เข้าถึงทันที</b> หลังเพิ่มคุณเข้าเสร็จ ไม่เก็บ token</span></li>
+    <li><span class="ic">👤</span><span><b>identify</b> — ให้บอทเห็นบัญชีของคุณ เพื่อยืนยันว่าคุณคือคนที่กดยืนยัน (ไม่ขออย่างอื่น)</span></li>
+    <li><span class="ic">🎖️</span><span>ยืนยันสำเร็จ → บอท <b>ให้ยศ</b> คุณอัตโนมัติ เพื่อเข้าใช้ห้องอื่น ๆ</span></li>
+    <li><span class="ic">🗑️</span><span>บอท <b>ทิ้งสิทธิ์เข้าถึงทันที</b> หลังให้ยศเสร็จ ไม่เก็บ token</span></li>
   </ul>
 
   <a class="btn" href="/api/verify/start" rel="noopener">
@@ -64,14 +64,14 @@
   </a>
 
   <p class="safe">🔒 ปลอดภัย — เราไม่ขอรหัสผ่าน คุกกี้ หรือ token ของคุณ ทุกอย่างทำผ่านหน้าทางการของ Discord</p>
-  <div class="foot">Powered by Lucifer · OAuth2</div>
+  <div class="foot">Powered by Bloodline · OAuth2</div>
 </main>
 
 <script>
   // ───── แก้ให้ตรงกับของคุณ ───── (ไม่มีความลับ — serverName/guildId แค่ไว้แสดงผล)
-  const CONFIG = { serverName: "Lucifer Community", guildId: "1557050132443168869" };
+  const CONFIG = { serverName: "Bloodline", guildId: "1557050132443168869" };
   document.getElementById("serverName").textContent = CONFIG.serverName || "—";
-  document.title = "ยืนยันตัวตน · " + (CONFIG.serverName || "Lucifer");
+  document.title = "ยืนยันตัวตน · " + (CONFIG.serverName || "Bloodline");
   if (CONFIG.guildId) document.getElementById("guildId").textContent = CONFIG.guildId;
 </script>
 </body>
