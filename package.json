@@ -1,0 +1,8 @@
+{
+  "name": "lucifer-verify-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vercel serverless OAuth2 verify & join web for the Lucifer bot",
+  "engines": { "node": ">=20" }
+}
